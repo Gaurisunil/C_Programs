@@ -18,7 +18,7 @@ UINT OffBit(UINT iNo,UINT iPos)
 	}
 	
 	iMask = 0X00000001;
-	iMask = iMask << (iPos-1);
+	iMask = ~iMask << (iPos-1);
 	
 	iResult=iNo & iMask;
 	
